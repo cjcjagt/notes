@@ -17,3 +17,48 @@ SMP 服务器的主要问题，那就是它的扩展能力非常有限。对于 
 什么时候应该使用行式存储？什么时候应该使用列式存储呢？
 如果你大部分时间都是关注整张表的内容，而不是单独某几列，并且所关注的内容是不需要通过任何聚集运算的，那么推荐使用行式存储。原因是重构每一行数据（即解压缩过程）对于HANA来说，是一个不小的负担。
 列式存储的话，比如你比较关注的都是某几列的内容，或者有频繁聚集需要的，通过聚集之后进行数据分析的表。
+
+
+
+## 基础
+https://blog.csdn.net/Ppikaqiu/article/details/106796242?utm_medium=distribute.pc_category.none-task-blog-hot-1.nonecase&depth_1-utm_source=distribute.pc_category.none-task-blog-hot-1.nonecase&request_id=
+
+https://blog.csdn.net/weixin_44519467/article/details/106746310?utm_medium=distribute.pc_category.none-task-blog-hot-8.nonecase&depth_1-utm_source=distribute.pc_category.none-task-blog-hot-8.nonecase&request_id=
+
+http://www.apiref.com/spring5/overview-summary.html
+
+spring: https://blog.csdn.net/supingemail/article/details/85988220
+
+面试题总结：https://blog.csdn.net/hxpjava1/category_9268106.html
+
+
+## dubbo
+
+Dubbo是一个分布式服务框架，致力于提供高性能和透明化的RPC远程服务调用方案，以及SOA服务治理方案。
+其核心部分包含:
+1. 远程通讯: 提供对多种基于长连接的NIO框架抽象封装，包括多种线程模型，序列化，以及“请求-响应”模式的信息交换方式。
+2. 集群容错: 提供基于接口方法的透明远程过程调用，包括多协议支持，以及软负载均衡，失败容错，地址路由，动态配置等集群支持。
+3. 自动发现: 基于注册中心目录服务，使服务消费方能动态的查找服务提供方，使地址透明，使服务提供方可以平滑增加或减少机器。
+
+2. Dubbo能做什么？
+1.透明化的远程方法调用，就像调用本地方法一样调用远程方法，只需简单配置，没有任何API侵入。      
+2.软负载均衡及容错机制，可在内网替代F5等硬件负载均衡器，降低成本，减少单点。
+3. 服务自动注册与发现，不再需要写死服务提供方地址，注册中心基于接口名查询服务提供者的IP地址，并且能够平滑添加或删除服务提供者。
+
+https://blog.csdn.net/houshaolin/article/details/76408399
+
+
+## SQL
+SQL 优化
+
+	1.尽量全值匹配
+	2.最佳左前缀法则
+	3.不在索引列上做任何操作
+	4.范围条件放最后
+	5.覆盖索引尽量用
+	6.不等于要慎用
+	7.Null/Not 有影响
+	8.Like 查询要当心
+	9.字符类型加引号
+	10.OR 改 UNION 效率高
+	
