@@ -27,10 +27,17 @@ https://blog.csdn.net/weixin_44519467/article/details/106746310?utm_medium=distr
 
 http://www.apiref.com/spring5/overview-summary.html
 
+
 spring: https://blog.csdn.net/supingemail/article/details/85988220
+https://blog.csdn.net/weixin_38361347/category_9281139_2.html
+
 
 面试题总结：https://blog.csdn.net/hxpjava1/category_9268106.html
+https://blog.csdn.net/weixin_38361347/category_9281139.html
 
+
+mysql：https://blog.csdn.net/mifffy_java/article/details/106767628
+https://blog.csdn.net/qq_39088066/article/details/101438677
 
 ## dubbo
 
@@ -51,14 +58,17 @@ https://blog.csdn.net/houshaolin/article/details/76408399
 ## SQL
 SQL 优化
 
-	1.尽量全值匹配
-	2.最佳左前缀法则
-	3.不在索引列上做任何操作
-	4.范围条件放最后
-	5.覆盖索引尽量用
-	6.不等于要慎用
-	7.Null/Not 有影响
-	8.Like 查询要当心
-	9.字符类型加引号
-	10.OR 改 UNION 效率高
-	
+1.尽量全值匹配
+2.最佳左前缀法则
+3.不在索引列上做任何操作
+4.范围条件放最后
+5.覆盖索引尽量用
+6.不等于要慎用
+7.Null/Not 有影响
+8.Like 查询要当心
+9.字符类型加引号
+10.OR 改 UNION 效率高
+
+
+MYSQL实现读写分离 ：https://www.jianshu.com/p/bc45c8bccf3c
+
